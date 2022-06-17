@@ -17,9 +17,9 @@ const deployGovernorContract: DeployFunction = async function (
         args: [
             governanceToken.address,
             timelock.address,
-            VOTING_DELAY,
+            QUORUM_PERCENTAGE,
             VOTING_PERIOD,
-            QUORUM_PERCENTAGE
+            VOTING_DELAY
         ],
         log: true,
         waitConfirmations: 1,
